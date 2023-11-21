@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AayurvedaAppCartModule_API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AnarghyaAyurCustomer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OrderModule_API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SpringBootCategoryServices" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SpringBootMedicineServices" vcs="Git" />
+  </component>
+</project>

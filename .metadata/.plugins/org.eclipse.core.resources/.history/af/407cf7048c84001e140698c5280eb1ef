@@ -1,0 +1,92 @@
+package com.anarghya.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Column;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+impor
+import javax.persistence.SequenceGenerator;t javax.persistence.JoinColumn;
+i
+import javax.persistence.SequenceGenerator;mport javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Customer_Add")
+public class CustomerAddress {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "your_sequence_name")
+	@SequenceGenerator(name = "your_sequence_name", sequenceName = "your_sequence_name", allocationSize = 1)
+	@Column(name = "address_id")
+	private Integer addressid;
+	private String address;
+	private String city;
+	private String state;
+	private String mobileNo;
+	private String pincode;
+
+	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@JoinColumn(name = "customer_id", nullable = false)
+	private CustomerModel customermodel;
+
+	public CustomerModel getCustomermodel() {
+		return customermodel;
+	}
+
+	public void setCustomermodel(CustomerModel customermodel) {
+		this.customermodel = customermodel;
+	}
+
+	public Integer getAddressid() {
+		return addressid;
+	}
+
+	public void setAddressid(Integer addressid) {
+		this.addressid = addressid;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getMobileNo() {
+		return mobileNo;
+	}
+
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+
+	public String getPincode() {
+		return pincode;
+	}
+
+	public void setPincode(String pincode) {
+		this.pincode = pincode;
+	}
+}

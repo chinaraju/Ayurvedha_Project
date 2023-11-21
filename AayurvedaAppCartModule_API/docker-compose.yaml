@@ -1,0 +1,11 @@
+
+version: '3'
+services:
+  your-app:
+    image: cart
+    ports:
+      - "8085:8085"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/china_ayur
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
